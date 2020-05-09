@@ -20,7 +20,7 @@ class Charts extends React.Component{
         const {confirmed,recovered,deaths} = data;
         console.log(confirmed);
         return(
-            <div>
+            <div className={"chart_container"}>
             {!country ?
             (dailyData.length ? <Line 
                     data={
@@ -32,7 +32,7 @@ class Charts extends React.Component{
                             borderColor: '#3333ff',
                             fill: true
                         },{
-                            labels:"Deaths",
+                            label:"Deaths",
                             data: dailyData.map(({deaths}) => (deaths)),
                             borderColor: 'red',
                             backgroundColor: 'rgba(255,0,0,0,5)',

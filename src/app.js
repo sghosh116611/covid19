@@ -7,7 +7,9 @@ import LoadingPage from './components/LoadingPage';
 
 
 const jsx = ( 
-    <AppRouter/>
+    <div className={"container"}>
+        <AppRouter/>
+    </div>
 );
 
 

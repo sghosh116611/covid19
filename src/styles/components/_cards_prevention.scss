@@ -1,0 +1,30 @@
+.container_card {
+    margin: 50px 0;
+}
+
+.card_custom {
+    margin: 0 2% !important;
+    padding: 10%;
+    border-radius: 53px 53px 53px 53px;
+    -moz-border-radius: 53px 53px 53px 53px;
+    -webkit-border-radius: 53px 53px 53px 53px;
+    border: 2px solid #666666;
+}
+
+.infected {
+    border-bottom: 10px solid blue;
+}
+
+.recovered {
+    border-bottom: 10px solid green;
+}
+
+.deaths {
+    border-bottom: 10px solid red;
+}
+
+@media(max-width: 770px) {
+    .card_custom {
+        margin: 2% 0 !important;
+    }
+}

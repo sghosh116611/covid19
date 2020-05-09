@@ -1,16 +1,17 @@
 import React from "react";
 import {Grid,Card,Typography, CardContent} from "@material-ui/core";
 import CountUp from "react-countup";
-import accounting from "accounting-js";
+import cs from "classnames";
+import LoadingPage from "./LoadingPage";
 
 export default ({data : {confirmed,recovered,deaths,lastUpdate}}) => {
   if(!confirmed)
-    return "Loading";
+    return <LoadingPage/>;
     
     return(
-        <div>
-            <Grid container spacing = {4} justify="center">
-                <Grid item component = {Card}>
+        <div className={cs("container_card","container")}>
+            <Grid container spacing = {2} justify="center">
+                <Grid item xs = {12} md = {3} component = {Card} className={cs("card_custom", "infected")}>
                     <CardContent>
                         <Typography color="textPrimary" gutterBottom>Infected</Typography>
                         <Typography variant="h5">
@@ -21,7 +22,7 @@ export default ({data : {confirmed,recovered,deaths,lastUpdate}}) => {
                     </CardContent>
                 </Grid>
 
-                <Grid item component = {Card}>
+                <Grid item xs = {12} md = {3} component = {Card} className={cs("card_custom", "recovered")}>
                     <CardContent>
                         <Typography color="textPrimary" gutterBottom>Recovered</Typography>
                         <Typography variant="h5">
@@ -34,7 +35,7 @@ export default ({data : {confirmed,recovered,deaths,lastUpdate}}) => {
                     </CardContent>
                 </Grid>
 
-                <Grid item component = {Card}>
+                <Grid item xs = {12} md = {3} component = {Card} className={cs("card_custom", "deaths")}>
                     <CardContent>
                         <Typography color="textPrimary" gutterBottom>Deaths</Typography>
                         <Typography variant="h5">

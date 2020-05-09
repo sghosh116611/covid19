@@ -1,6 +1,7 @@
 import React from "react";
 import {fetchcountries} from "../APIs/covidDataTracker";
 import { FormControl, NativeSelect } from "@material-ui/core";
+import cx from "classnames";
 
 class CountryPicker extends React.Component{
     state = {
@@ -15,7 +16,7 @@ class CountryPicker extends React.Component{
     render(){
         const {countries} = this.state;
         return(
-        <div>
+        <div className={cx("container","country")}>
             <FormControl>
                 <NativeSelect defaultValue = "" onChange = {(e) => this.props.handleCountryChange(e.target.value) }>
                     <option value="">Global</option>
