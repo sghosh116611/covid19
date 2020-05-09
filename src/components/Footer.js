@@ -14,7 +14,7 @@ export default () => (
                 <h4 class="mt-lg-0 mt-sm-3">Other Projects</h4>
                 <ul class="m-0 p-0">
                     <li>- <a href="https://tranquil-brushlands-44244.herokuapp.com/">Chat App</a></li>
-                    <li>- <a href="budgetapp-soumojit.herokuapp.com">Budget App</a></li>
+                    <li>- <a href="https://budgetapp-soumojit.herokuapp.com">Budget App</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-xs-12 location">
