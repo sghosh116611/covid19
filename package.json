@@ -27,7 +27,7 @@
         "babel-polyfill": "^6.26.0",
         "babel-preset-env": "1.5.2",
         "babel-preset-react": "6.24.1",
-        "chart.js": "^2.9.3",
+        "chart.js": "^2.9.4",
         "classnames": "^2.2.6",
         "css-loader": "0.28.4",
         "dotenv": "^8.2.0",
